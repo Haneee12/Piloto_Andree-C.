@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card card--wide">
+    <header class="card__brand">
+      <h1>Create Your Student Account</h1>
+      <p>Fill in your details below. All fields are required.</p>
+    </header>
+
+    <section class="card__body">
+      <form action="#" method="post">
+        <div class="form-grid">
+
+          <div class="field">
+            <label for="student-id">Student ID</label>
+            <input type="text" id="student-id" name="student_id" placeholder="e.g. 2024-00123"
+                   required minlength="5" maxlength="15" pattern="[A-Za-z0-9\-]+"
+                   title="Use letters, numbers, and dashes only (at least 5 characters).">
+          </div>
+
+          <div class="field">
+            <label for="full-name">Full name</label>
+            <input type="text" id="full-name" name="full_name" placeholder="Last name, First name"
+                   autocomplete="name" required minlength="3">
+          </div>
+
+          <div class="field field--full">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@school.edu"
+                   autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="reg-password">Password</label>
+            <input type="password" id="reg-password" name="password" placeholder="At least 8 characters"
+                   autocomplete="new-password" required minlength="8">
+            <span class="hint">Use at least 8 characters.</span>
+          </div>
+
+          <div class="field">
+            <label for="confirm-password">Confirm password</label>
+            <input type="password" id="confirm-password" name="confirm_password" placeholder="Re-enter your password"
+                   autocomplete="new-password" required minlength="8">
+          </div>
+
+          <div class="field">
+            <label for="dob">Date of birth</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+
+          <div class="field">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="" disabled selected>Select gender</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+              <option value="undisclosed">Prefer not to say</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="course">Course</label>
+            <select id="course" name="course" required>
+              <option value="" disabled selected>Select your course</option>
+              <option value="bsit">BS Information Technology</option>
+              <option value="bscs">BS Computer Science</option>
+              <option value="bsba">BS Business Administration</option>
+              <option value="bsed">BS Education</option>
+              <option value="bsn">BS Nursing</option>
+              <option value="bsce">BS Civil Engineering</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="year">Year level</label>
+            <select id="year" name="year_level" required>
+              <option value="" disabled selected>Select year level</option>
+              <option value="1">1st year</option>
+              <option value="2">2nd year</option>
+              <option value="3">3rd year</option>
+              <option value="4">4th year</option>
+            </select>
+          </div>
+
+          <div class="field field--full">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" placeholder="Street, city, province"
+                      autocomplete="street-address" required minlength="10"></textarea>
+          </div>
+
+        </div>
+
+        <button type="submit" class="btn">Register</button>
+      </form>
+
+      <p class="switch">Already have an account? <a href="login.html">Back to log in</a></p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <header class="card__brand">
+      <h1>Student Login</h1>
+      <p>Sign in to access your student account.</p>
+    </header>
+
+    <section class="card__body">
+      <form action="#" method="post">
+        <label for="username">Student ID or Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your Student ID or Username"
+               autocomplete="username" required minlength="3">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password"
+               autocomplete="current-password" required minlength="8">
+
+        <div class="row-between">
+          <label class="checkbox" for="remember">
+            <input type="checkbox" id="remember" name="remember">
+            Remember me
+          </label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+      </form>
+
+      <p class="switch">New Student? <a href="register.html">Create an account</a></p>
+    </section>
+  </main>
+</body>
+</html>
